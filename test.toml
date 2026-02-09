@@ -1,0 +1,179 @@
+[project_definition]
+binary_path = "./a2"
+makefile_path = "."
+make_targets = ["all"]
+project_name = "a2"
+global_timeout = 120
+
+################################################################################
+## M1 public test cases
+##
+[[testcases]]
+name = "M1 Start (Example Output)"
+description = "Example output from description of M1"
+type = "OrdIO"
+io_file = "tests/01/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_01.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+[[testcases]]
+name = "Wrong Dungeon Config"
+description = "Wrong Magic Word in dungeon config"
+type = "OrdIO"
+io_file = "tests/02/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 3
+argv = ["configs/dungeon_config_02.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+[[testcases]]
+name = "Wrong Parameters"
+description = ""
+type = "OrdIO"
+io_file = "tests/03/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 2
+argv = ["configs/dungeon_config_03.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+[[testcases]]
+name = "Big Dungeon Room"
+description = ""
+type = "OrdIO"
+io_file = "tests/04/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_04.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+################################################################################
+## M2 public test cases
+##
+[[testcases]]
+name = "M2 Full Game"
+description = "Sample output from M2 description"
+type = "OrdIO"
+io_file = "tests/05/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_05.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+add_exp_file = "tests/05/save_ref.txt"
+add_out_file = "saves/save_05.txt"
+
+[[testcases]]
+name = "help command"
+description = ""
+type = "OrdIO"
+io_file = "tests/06/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_06.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+[[testcases]]
+name = "story command"
+description = ""
+type = "OrdIO"
+io_file = "tests/07/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_07.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=879212495']
+
+[[testcases]]
+name = "map command"
+description = ""
+type = "OrdIO"
+io_file = "tests/08/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_08.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=879212495']
+
+[[testcases]]
+name = "positions command"
+description = ""
+type = "OrdIO"
+io_file = "tests/09/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_09.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+[[testcases]]
+name = "player command"
+description = ""
+type = "OrdIO"
+io_file = "tests/10/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_10.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+[[testcases]]
+name = "inventory command"
+description = ""
+type = "OrdIO"
+io_file = "tests/11/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_11.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+[[testcases]]
+name = "move command"
+description = ""
+type = "OrdIO"
+io_file = "tests/12/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_12.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+[[testcases]]
+name = "loot command"
+description = ""
+type = "OrdIO"
+io_file = "tests/13/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_13.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+[[testcases]]
+name = "use command"
+description = ""
+type = "OrdIO"
+io_file = "tests/14/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_14.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']
+
+[[testcases]]
+name = "attack command"
+description = ""
+type = "OrdIO"
+io_file = "tests/15/io.txt"
+io_prompt = "s*>\\s*$"
+exp_exit_code = 0
+argv = ["configs/dungeon_config_15.txt", "configs/story_config.txt"]
+protected = false
+env_vars = ['RAND_SEED=1234']

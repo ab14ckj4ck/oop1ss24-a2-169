@@ -1,0 +1,3 @@
+/home/florian/Desktop/uni/2. semester/oop1/oop1ss24-a2-169/cmake-build-debug/CMakeFiles/a2_dummy.dir
+/home/florian/Desktop/uni/2. semester/oop1/oop1ss24-a2-169/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/florian/Desktop/uni/2. semester/oop1/oop1ss24-a2-169/cmake-build-debug/CMakeFiles/rebuild_cache.dir

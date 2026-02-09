@@ -1,0 +1,54 @@
+> 
+> ** Welcome to the exciting world of Dungeons & Classes!
+> 
+> How many players want to join the adventure? (1 to 3)
+? > 
+< 2
+> 
+> Player 1 what do you wish to be called? (max length 10 characters)
+? > 
+< David
+> David, please choose a player type:
+>   [W] Wizard     0/1
+>   [B] Barbarian  0/1
+>   [R] Rogue      0/1
+? > 
+< b
+> 
+> Player 2 what do you wish to be called? (max length 10 characters)
+? > 
+< Alex
+> Alex, please choose a player type:
+>   [W] Wizard     0/1
+>   [B] Barbarian  1/1
+>   [R] Rogue      0/1
+? > 
+< R
+> 
+> -- Players --------------------------------------
+>   Player 1: Barbarian [B] "David"
+>   Player 2: Rogue [R] "Alex"
+> 
+> ** You have entered the dungeon of the evil Lich!
+> ** Help the anxious souls of the nearby village by freeing
+> ** them from the monsters that haunt it!
+> 
+> ** Beware, there are zombies in this room!
+> 
+> -- ROOM 1 (0/5 completed) --------------------
+> 
+>      1   2   3   4   5  
+>    +---+---+---+---+---+
+>  1 |   |   |#D2|   |   |
+>    +---+---+---+---+---+
+>  2 |   |   |   | Z1|   |
+>    +---+---+---+---+---+
+>  3 | B | R |   |   |   |
+>    +---+---+---+---+---+
+>  4 |#D0|   |   |   |   |
+>    +---+---+---+---+---+
+>    Z1: 15/15
+> 
+> ** What do you want to do?
+? > 
+< quit
